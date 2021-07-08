@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Montserrat", sans-serif;
+    margin:100px 230px;
+}
+
+
+
+#slider{
+    width:100%;
+    height: 200px;
+    position: relative;
+    padding: 0;
+    margin: 0px 0px;
+}
+#slider img{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 130%;
+    object-fit: auto;
+    transition: opacity 1000ms;
+    border-radius: 15px;
+}
+#slider img.selected{
+    opacity: 1;
+}
+
+
+
+.apresentacao{
+    display: flex;
+    justify-content:space-evenly;
+    align-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 45px;
+    width: 200px;
+    margin: 2px 2px;
+    background-color: rgba(56, 56, 56, 0.623);
+    border-radius: 15px;
+}
+.apresentacao h3{
+    color: aliceblue;
+    margin-bottom: 40px;  
+    margin-top: 1px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+#bthdr{
+    align-self: flex-end;
+    background-color: #172f91d2; 
+}
+.blocobt{
+    flex-direction: row;
+    display: flex;
+}
+
+
+
+.bloco{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.bloco h1{
+    color: white;
+}
+.bloco h2{
+    color: white;
+    justify-content: center;
+}
+.bloco h3{
+    color: white;
+    justify-content: center;
+}
+.blocoTitle h2{
+    color: white;
+    justify-content: center;
+    background-color: #172f91d2; 
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 15px;
+}
+
+
+
+.botao{
+    background-color: #172f91d2;    
+    border: none;
+    border-radius: 10px;
+    color: white;
+    display: inline-block;
+    padding: 15px;
+    margin: 10px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.796);
+}
+#botao{
+    background-color: #172f91d2; 
+    border: none;
+    border-radius: 10px;
+    color: white;
+    display: inline-block;
+    padding: 15px;
+    margin: 10px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.796);
+}
+.botao:hover{
+    background-color:  #2764c0be;
+    transition: 0.25s;
+}
+#botao:hover{
+    background-color:  #2795c0be;
+    transition: 0.25s;
+}
+
+
+
+.tabela{
+    border-spacing: 0;
+    margin: 0 50px 20px;
+    width: 100%;
+}
+.tabela tr:nth-child(even) td{
+    background-color: rgba(56, 56, 56, 0.623);
+}
+.tabela td{
+    padding: 10px;
+    color: whitesmoke;
+}
+.tabela_header td{
+    font-weight: bold;
+    background: #172f91d2;   
+}
+
+
+
+#imagemSingle{
+    max-height: 400px;
+}
+#sinopse{
+    box-sizing: border-box;
+    height: 200px; 
+    word-break: break-all;
+
+}
+
+
+
+.form{
+    width: 600px;
+}
+.form_input{
+    align-items: center;
+    justify-content: space-between;
+}
+.form_input label{
+    font-weight: bold;
+    padding-right: 10px;
+    color: white;
+}
+.form_input input[type=text]{
+    background-color: rgba(255, 255, 255, 0.301);
+    width: 450px;
+    
+    padding: 6px;
+    margin: 6px 0;
+    display: inline-block;
+    border-radius: 4px;
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}   
+.form_input input[type=submit]{
+    width: 60%;
+}
+
+
+
+.novo_id {
+    background: #172f91d2; 
+    border-radius: 5px; 
+    padding: 6px;
+    font-size: 25px;
+    font-weight: bold; 
+    padding: 5x 20px;
+}
+
+
+
+.cx_create{
+    background-color: rgba(56, 56, 56, 0.623);
+    padding: 50px 50px 50px 50px;
+    margin: 10px 40px 10px 40px;
+    border-radius: 15px;
+}
+.cx_update{
+    background-color: rgba(56, 56, 56, 0.623);
+    padding: 50px 50px 50px 50px;
+    margin: 10px 40px 10px 40px;
+    border-radius: 15px;
+}
+.cx_delete{
+    background-color: rgba(56, 56, 56, 0.623);
+    padding: 50px 50px 50px 50px;
+    margin: 10px 40px 10px 40px;
+    border-radius: 15px;
+}
+
+
+
+.cx_read_single{
+    background-color: rgba(56, 56, 56, 0.623);
+    padding: 50px 50px 50px 50px;
+    margin: 10px 0px ;
+    border-radius: 15px;
+}
+.blocors{
+    display: flex;
+    justify-content: space-evenly;
+}
+.blococapa{
+    text-align: center;
+    color: aliceblue;
+}
+.blocosin{
+    font-style: italic;
+    color: aliceblue;
+}
+
+
+
+.sucesso{
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    border-radius: 4px;
+    color: #155724;
+    margin: 0 50px;
+}
+.removido{
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    border-radius: 4px;
+    color: #721c24;
+    margin: 0 50px;
+    
+}
+.certeza{
+    font-size: 25px;
+    font-weight: bolder;
+    color: white;
+    justify-content: center;
+}

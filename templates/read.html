@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animes DOM</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+    <body background='/static/img/fundaum.gif'>
+        {% include 'header.html' %}
+
+        <div class="blocoTitle">
+            <h2>
+                CATÁLOGO DE ANIMES
+            </h2>
+        </div>
+        <div class="bloco">
+       <!--      <table class="tabela"> -->
+                <!-- <tr class="tabela_header">
+                    <td><h2>ID</h2></td>
+                    <td><h2>Nome</h2></td>
+                    <td><h2>Capa</h2></td>
+                    <td><h2>Gênero</h2></td>
+                    <td><h2>Ações</h2></td>
+                </tr> -->
+                {% for registro in registros %}
+                <!--<a href="/read/{{ registro['id'] }}">-->
+                <div class="apresentacao">
+                    <!-- <td><h2>{{ registro['id'] }}</h2></td> -->
+
+                    
+                        <h3>{{ registro['nome'] }}</h3>
+                    
+                    
+                    <a href="/read/{{ registro['id'] }}">
+                    
+                    <img src="{{ registro['imagem_url'] }}" alt="{{ registro['nome'] }}" width="200" height="250" />
+                    </a>
+                    <!-- <h2>{{ registro['genero'] }}</h2> -->
+                    
+                       <!--  <a href="/read/{{ registro['id'] }}" class="botao">VER</a>
+                         -->
+                    
+                </div>
+                <!--</a>-->
+                {% endfor %}
+
+            <!-- </table> -->
+        </div>
+        
+    </body> 
+</html>

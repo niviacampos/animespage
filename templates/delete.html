@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animes DOM</title>
+    <link rel="stylesheet" href="/static/style.css" />
+</head>
+    <body background='/static/img/fundaum.gif'>
+
+        {% include 'header.html' %}
+        
+
+        {% if sucesso %}
+
+        
+        <div class="bloco removido">
+            <p>
+                Registro removido com sucesso!
+            </p>
+        </div>
+
+        <div class="bloco">
+            <a href="/read" class="botao">VISUALIZAR</a>
+        </div>
+
+
+        {% elif registro %}
+    <div class="cx_delete">
+        <div class="bloco">
+            <h2> Remover <span class="novo_id"><u>{{ registro.nome }}</u></span> </h2>
+        </div>
+        <div class="bloco">    
+            <br /><br /><br /><br />
+            <h2>
+                Ao remover <span class="novo_id"><u>{{ registro.nome }}</u></span>, este conteúdo não mais estará disponível em nosso catálogo!
+            </h2>
+        </div>
+
+        <div class="bloco">
+            <p class="certeza">
+                Tem certeza que deseja remover <span class="novo_id"><u>{{ registro.nome }}</u></span> ?
+                <br /><br /><br />
+                <a href="/delete/{{ registro.id }}/confirmed" class="botao">REMOVER</a>
+                <a href="/read" class="botao">CANCELAR</a>
+            </p>
+        </div>
+    </div>
+
+        {% else %}
+        <div class="bloco removido">
+            <p>
+                NENHUM REGISTRO ENCONTRADO! <br /><br /> VALOR INVÁLIDO DE ID!
+            </p>
+        </div>
+
+        <div class="bloco">
+            <a href="/read" class="botao">VOLTAR</a>
+        </div>
+    
+        {% endif %}
+
+    </body>
+</html>
